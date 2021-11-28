@@ -17,13 +17,13 @@ namespace OOP2Exercises
 
             };
 
-            list.Sort();
+            ComplexComparerByReal c = new ComplexComparerByReal();
+            list.Sort(c);
 
             foreach (var item in list)
             {
                 Console.WriteLine(item);
             }
-
            
         }
     }
