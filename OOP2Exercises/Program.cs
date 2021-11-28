@@ -9,13 +9,35 @@ namespace OOP2Exercises
         static void Main(string[] args)
         {
 
-            Bread bread1 = new Bread(DateTime.Now, "chleb", 3.5M);
-            Bread bread2 = new Bread(DateTime.Now, "chleb2", 3.5M);
+            MagicArray<int> ma = new MagicArray<int>(3);
+            ma.Add(1);
+            ma.Add(2);
+            ma.Add(3);
+            ma.Add(4);
 
-            Basket basket = new Basket();
+            ma.Print();
 
-            basket.AddProductToBasket(bread1);
-            basket.AddProductToBasket(bread2);
+
+            MagicArray<string> ms = new MagicArray<string>(3);
+            ms.Add("a");
+            ms.Add("b");
+            ms.Add("c");
+            ms.Add("d");
+
+            ms.Print();
+
+
+            MagicArray<Bread> mb = new MagicArray<Bread>(3);
+            mb.Add(new Bread(DateTime.Now, "chleb", 3.5M));
+
+
+            // Bread bread1 = new Bread(DateTime.Now, "chleb", 3.5M);
+            // Bread bread2 = new Bread(DateTime.Now, "chleb2", 3.5M);
+            //
+            // Basket basket = new Basket();
+            //
+            // basket.AddProductToBasket(bread1);
+            // basket.AddProductToBasket(bread2);
 
 
 
