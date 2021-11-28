@@ -8,11 +8,25 @@ namespace OOP2Exercises
     {
         static void Main(string[] args)
         {
-            var display = new DisplayToFile();
-            var game = new Game("super gra", display);
-            game.AddPlayer("player1");
-            game.AddPlayer("player2");
-            game.PrintGameInfo();
+
+            Bread bread1 = new Bread(DateTime.Now, "chleb", 3.5M);
+            Bread bread2 = new Bread(DateTime.Now, "chleb2", 3.5M);
+
+            Basket basket = new Basket();
+
+            basket.AddProductToBasket(bread1);
+            basket.AddProductToBasket(bread2);
+
+
+
+
+
+
+            //var display = new DisplayToFile();
+            //var game = new Game("super gra", display);
+            //game.AddPlayer("player1");
+            //game.AddPlayer("player2");
+            //game.PrintGameInfo();
 
 
 
